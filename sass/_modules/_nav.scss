@@ -1,0 +1,23 @@
+div{
+    margin: 1px;
+    padding: 2px;
+    span{
+        background: pink;
+        p{
+            color: aqua;
+        }
+    }
+}
+
+.gguyz{
+    span{
+        transition: 1s;
+    }
+}
+
+.melody{
+    transform: skewX(1px);
+    .gosu{
+        color: white;
+    }
+}

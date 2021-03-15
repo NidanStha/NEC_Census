@@ -1,0 +1,15 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/print.scss */
+p {
+  padding: 1px;
+}
+/* line 7, ../sass/print.scss */
+p h1 {
+  margin: 1px;
+}
+/* line 10, ../sass/print.scss */
+p span {
+  background: black;
+}

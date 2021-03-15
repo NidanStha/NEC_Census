@@ -1,0 +1,27 @@
+/* line 1, ../sass/_modules/_nav.scss */
+div {
+  margin: 1px;
+  padding: 2px;
+}
+/* line 4, ../sass/_modules/_nav.scss */
+div span {
+  background: pink;
+}
+/* line 6, ../sass/_modules/_nav.scss */
+div span p {
+  color: aqua;
+}
+
+/* line 13, ../sass/_modules/_nav.scss */
+.gguyz span {
+  transition: 1s;
+}
+
+/* line 18, ../sass/_modules/_nav.scss */
+.melody {
+  transform: skewX(1px);
+}
+/* line 20, ../sass/_modules/_nav.scss */
+.melody .gosu {
+  color: white;
+}
