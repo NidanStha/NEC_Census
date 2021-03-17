@@ -1,27 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 /* line 1, ../sass/_modules/_nav.scss */
-div {
-  margin: 1px;
-  padding: 2px;
-}
-/* line 4, ../sass/_modules/_nav.scss */
-div span {
-  background: pink;
-}
-/* line 6, ../sass/_modules/_nav.scss */
-div span p {
-  color: aqua;
+nav {
+  margin: 0px;
 }
 
-/* line 13, ../sass/_modules/_nav.scss */
-.gguyz span {
-  transition: 1s;
+/* line 1, ../sass/_modules/_body.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 17px;
+  color: #000;
 }
 
-/* line 18, ../sass/_modules/_nav.scss */
-.melody {
-  transform: skewX(1px);
+/* line 9, ../sass/_modules/_body.scss */
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
 }
-/* line 20, ../sass/_modules/_nav.scss */
-.melody .gosu {
-  color: white;
+
+/* line 15, ../sass/_modules/_body.scss */
+.header {
+  background-color: #464646;
+}
+/* line 17, ../sass/_modules/_body.scss */
+.header .logo {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+}
+/* line 21, ../sass/_modules/_body.scss */
+.header .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 24, ../sass/_modules/_body.scss */
+.header .logo a img {
+  width: 50px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* line 33, ../sass/_modules/_body.scss */
+nav {
+  background: linear-gradient(180deg, #2200ab, #522af3);
+  color: #fff;
+}
+/* line 36, ../sass/_modules/_body.scss */
+nav .menubar {
+  margin: 0 0 0 15px;
+  padding: 0 0 0 2px;
+  list-style-type: none;
+  font-size: 100%;
+}
+/* line 41, ../sass/_modules/_body.scss */
+nav .menubar a {
+  margin: 0;
+  padding: 10px 2px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background: #270b94;
+  display: inline-block;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  transition: 0.5s;
+}
+/* line 52, ../sass/_modules/_body.scss */
+nav .menubar a li {
+  margin: 0;
+}
+/* line 55, ../sass/_modules/_body.scss */
+nav .menubar a:hover {
+  background: linear-gradient(-45deg, #2200ab, #522af3);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
