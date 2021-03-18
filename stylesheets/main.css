@@ -46,7 +46,7 @@ body {
 /* line 33, ../sass/_modules/_body.scss */
 nav {
   background: linear-gradient(180deg, #2200ab, #522af3);
-  color: #fff;
+  color: #000;
 }
 /* line 36, ../sass/_modules/_body.scss */
 nav .menubar {
@@ -54,27 +54,38 @@ nav .menubar {
   padding: 0 0 0 2px;
   list-style-type: none;
   font-size: 100%;
+  display: inline;
 }
-/* line 41, ../sass/_modules/_body.scss */
+/* line 42, ../sass/_modules/_body.scss */
 nav .menubar a {
   margin: 0;
-  padding: 10px 2px;
+  padding: 10px 10px;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-  background: #270b94;
   display: inline-block;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border-bottom: 5px solid transparent;
   transition: 0.5s;
 }
-/* line 52, ../sass/_modules/_body.scss */
+/* line 51, ../sass/_modules/_body.scss */
 nav .menubar a li {
   margin: 0;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
 }
-/* line 55, ../sass/_modules/_body.scss */
+/* line 56, ../sass/_modules/_body.scss */
 nav .menubar a:hover {
   background: linear-gradient(-45deg, #2200ab, #522af3);
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-bottom: 5px solid #999;
+}
+/* line 59, ../sass/_modules/_body.scss */
+nav .menubar a:hover li {
+  border-bottom: 1px solid #fff;
+}
+/* line 65, ../sass/_modules/_body.scss */
+nav .search_field {
+  margin: 0 15px 0 0;
+  float: right;
+  vertical-align: middle;
+  padding: 10px 10px;
 }

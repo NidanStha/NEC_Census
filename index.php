@@ -19,6 +19,10 @@
             <a href="#"><li>Add Members</li></a>
             <a href="#"><li>Summery</li></a>
           </ul>
+          <div class="search_field">
+            <input type="text" name="" value="">
+            <input type="submit" name="" value="Search">
+          </div>
         </nav>
       </div>
     </body>

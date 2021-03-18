@@ -32,31 +32,40 @@ body{
 
 nav{
   background: linear-gradient(180deg,$primary-color,#522af3);
-  color: $sec-text;
+  color: $prim-text;
   .menubar{
     margin: 0 0 0 15px;
     padding: 0 0 0 2px;
     list-style-type: none;
     font-size: 100%;
+    display: inline;
     a{
       margin: 0;
-      padding: 10px 2px;
+      padding: 10px 10px;
       text-decoration: none;
       color: $sec-text;
       cursor: pointer;
-      background: #270b94;
       display: inline-block;
-      border-left: 1px solid transparent;
-      border-right: 1px solid transparent;
+      border-bottom: 5px solid transparent;
       transition: 0.5s;
       li{
         margin: 0;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
       }
       &:hover{
         background: linear-gradient(-45deg,$primary-color,#522af3);
-        border-left: 1px solid $sec-text;
-        border-right: 1px solid $sec-text;
+        border-bottom: 5px solid #999;
+        & li{
+          border-bottom: 1px solid $sec-text;
+        }
       }
     }
+  }
+  .search_field{
+    margin: 0 15px 0 0;
+    float: right;
+    vertical-align: middle;
+    padding: 10px 10px;
   }
 }
