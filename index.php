@@ -16,7 +16,7 @@
         <nav>
           <ul class="menubar">
             <a href="#"><li>Members</li></a>
-            <a href="#"><li>Add Members</li></a>
+            <a href="pages/addmembers.php"><li>Add Members</li></a>
             <a href="#"><li>Summery</li></a>
           </ul>
           <div class="search_field">
