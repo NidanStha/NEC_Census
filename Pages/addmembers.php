@@ -19,7 +19,7 @@
 
       <nav>
         <ul class="menubar">
-          <a href="#"><li>Members</li></a>
+          <a href="../index.php"><li>Members</li></a>
           <a href="pages/addmembers.php"><li>Add Members</li></a>
           <a href="#"><li>Summery</li></a>
         </ul>
@@ -35,11 +35,9 @@
         <input type="text" name="" value="" id="age">
         <label for="">Name :</label>
         <input type="text" name="" value="" id="">
+        <label for="datepicker">Date :</label>
+        <input class="inputdate" id="datepicker" name="Membership_date"  value="" placeholder="YYYY/MM/DD"/>
       </form>
-      <input class="inputdate" id="datepicker" name="Membership_date"  value="<?php echo date('Y-m-d'); ?>" />
-      <?php
-      $date_hidden = date('Y-m-d');
-      ?>
     </div>
     <script type="text/javascript" src="../nepalidatepicker/js/jquery.js"></script>
     <script type="text/javascript" src="../nepalidatepicker/js/bootstrap.min.js"></script>
@@ -58,6 +56,6 @@
           $('#datepicker9').val(BS2AD($('#datepicker').val()));
         });
       });
-  </script>
+    </script>
   </body>
 </html>
