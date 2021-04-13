@@ -15,7 +15,7 @@
 
         <nav>
           <ul class="menubar">
-            <a href="#"><li>Members</li></a>
+            <a href="index.php"><li>Members</li></a>
             <a href="pages/addmembers.php"><li>Add Members</li></a>
             <a href="#"><li>Summery</li></a>
           </ul>
@@ -24,6 +24,33 @@
             <input type="submit" name="" value="Search">
           </div>
         </nav>
+        <div class="row">
+          <div class="titlebar">
+            <h3>List of members</h3>
+          </div>
+          <table class="table-wrapper">
+            <tr>
+              <th>S.N</th>
+              <th>Name</th>
+              <th>Contact_no</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>q</td>
+              <td>s</td>
+              <td>s</td>
+              <td>s</td>
+            </tr>
+            <tr>
+              <td>s</td>
+              <td>s</td>
+              <td>s</td>
+              <td>s</td>
+            </tr>
+          </table>
+        </div>
       </div>
+
+      <footer>© 2021 NEC. All rights reserved | Nepali Evangelical Church Admin Panel | Version 1.0 | Designed by:NDN Webwork</footer>
     </body>
 </html>

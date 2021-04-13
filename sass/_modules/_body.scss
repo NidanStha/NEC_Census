@@ -10,6 +10,7 @@ body{
   margin: 0px;
   padding: 0px;
   border: 0px;
+  background-size: cover;
   outline: 0px;
 }
 .header{
@@ -30,43 +31,33 @@ body{
   }
 }
 
-nav{
-  background: linear-gradient(180deg,$primary-color,#522af3);
-  color: $prim-text;
-  .menubar{
-    margin: 0 0 0 15px;
-    padding: 0 0 0 2px;
-    list-style-type: none;
-    font-size: 100%;
-    display: inline;
-    a{
-      margin: 0;
-      padding: 10px 10px;
-      text-decoration: none;
-      color: $sec-text;
-      cursor: pointer;
-      display: inline-block;
-      border-bottom: 5px solid transparent;
-      transition: 0.5s;
-      li{
-        margin: 0;
-        border-bottom: 1px solid transparent;
-        transition: 0.5s;
-      }
-      &:hover{
-        background: linear-gradient(-45deg,$primary-color,#522af3);
-        border-bottom: 5px solid #999;
-        & li{
-          border-bottom: 1px solid $sec-text;
-          
-        }
-      }
+.row{
+  margin: 0px auto;
+  width: 1200px;
+  .table-wrapper{
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+    th{
+      border: 1px solid #a088ff;
+      background: #a088ff;
+    }
+    tr:nth-child(even){
+      background: #88c8ff;
+    }
+    tr:nth-child(odd){
+      background: #c6ff88;
     }
   }
-  .search_field{
-    margin: 0 15px 0 0;
-    float: right;
-    vertical-align: middle;
-    padding: 10px 10px;
-  }
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 11px;
+  text-align: center;
+  background: $prim-text;
+  color: $sec-text;
 }
