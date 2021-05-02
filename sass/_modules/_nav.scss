@@ -1,5 +1,5 @@
 nav{
-  background: linear-gradient(180deg,$primary-color,#522af3);
+  background: linear-gradient(180deg, #5385af, #0057a1);
   color: $prim-text;
   .menubar{
     margin: 0 0 0 15px;
@@ -22,7 +22,7 @@ nav{
         transition: 0.5s;
       }
       &:hover{
-        background: linear-gradient(-45deg,$primary-color,#522af3);
+        background: linear-gradient(-45deg, #000000, #2800c8);
         border-bottom: 5px solid #999;
         & li{
           border-bottom: 1px solid $sec-text;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 /* line 1, ../sass/_modules/_nav.scss */
 nav {
-  background: linear-gradient(180deg, #2200ab, #522af3);
+  background: linear-gradient(180deg, #5385af, #0057a1);
   color: #000;
 }
 /* line 4, ../sass/_modules/_nav.scss */
@@ -31,7 +31,7 @@ nav .menubar a li {
 }
 /* line 24, ../sass/_modules/_nav.scss */
 nav .menubar a:hover {
-  background: linear-gradient(-45deg, #2200ab, #522af3);
+  background: linear-gradient(-45deg, #000000, #2800c8);
   border-bottom: 5px solid #999;
 }
 /* line 27, ../sass/_modules/_nav.scss */
@@ -51,72 +51,74 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Tahoma, Geneva, sans-serif;
+  background-image: url(../Images/OPC.jpg);
+  background-repeat: no-repeat;
   font-size: 17px;
   color: #000;
 }
 
-/* line 9, ../sass/_modules/_body.scss */
+/* line 11, ../sass/_modules/_body.scss */
 .wrapper {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  background-size: cover;
   outline: 0px;
 }
 
-/* line 16, ../sass/_modules/_body.scss */
+/* line 17, ../sass/_modules/_body.scss */
 .header {
   background-color: #464646;
 }
-/* line 18, ../sass/_modules/_body.scss */
+/* line 19, ../sass/_modules/_body.scss */
 .header .logo {
   color: #fff;
   font-size: 18px;
   display: inline-block;
 }
-/* line 22, ../sass/_modules/_body.scss */
+/* line 23, ../sass/_modules/_body.scss */
 .header .logo a {
   text-decoration: none;
   color: #fff;
 }
-/* line 25, ../sass/_modules/_body.scss */
+/* line 26, ../sass/_modules/_body.scss */
 .header .logo a img {
   width: 50px;
   padding: 5px;
   vertical-align: middle;
 }
 
-/* line 34, ../sass/_modules/_body.scss */
+/* line 35, ../sass/_modules/_body.scss */
 .row {
   margin: 0px auto;
   width: 1200px;
 }
-/* line 37, ../sass/_modules/_body.scss */
+/* line 38, ../sass/_modules/_body.scss */
 .row .table-wrapper {
   width: 100%;
   border: 1px solid #000;
   text-align: center;
 }
-/* line 41, ../sass/_modules/_body.scss */
+/* line 42, ../sass/_modules/_body.scss */
 .row .table-wrapper th {
   border: 1px solid #a088ff;
   background: #a088ff;
 }
-/* line 45, ../sass/_modules/_body.scss */
+/* line 46, ../sass/_modules/_body.scss */
 .row .table-wrapper tr:nth-child(even) {
   background: #88c8ff;
 }
-/* line 48, ../sass/_modules/_body.scss */
+/* line 49, ../sass/_modules/_body.scss */
 .row .table-wrapper tr:nth-child(odd) {
   background: #c6ff88;
 }
 
-/* line 54, ../sass/_modules/_body.scss */
+/* line 55, ../sass/_modules/_body.scss */
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0px;
   margin-top: 10px;
-  padding: 15px;
+  width: 100%;
+  padding: 15px 0px;
   font-size: 11px;
   text-align: center;
   background: #000;

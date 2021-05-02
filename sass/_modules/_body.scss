@@ -2,6 +2,8 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: Tahoma, Geneva, sans-serif;
+  background-image: url(../Images/OPC.jpg);
+  background-repeat: no-repeat;
   font-size: 17px;
   color: $prim-text;
 }
@@ -10,7 +12,6 @@ body{
   margin: 0px;
   padding: 0px;
   border: 0px;
-  background-size: cover;
   outline: 0px;
 }
 .header{
@@ -52,10 +53,11 @@ body{
 }
 
 footer{
-  position: relative;
+  position: absolute;
   bottom: 0px;
   margin-top: 10px;
-  padding: 15px;
+  width: 100%;
+  padding: 15px 0px;
   font-size: 11px;
   text-align: center;
   background: $prim-text;
