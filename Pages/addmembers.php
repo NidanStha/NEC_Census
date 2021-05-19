@@ -1,5 +1,8 @@
 <?php
   include "connect.php";
+  if (isset($_GET['upl'])) {
+      echo "<div class='popup-true'>Data Uploaded</div>";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -70,13 +73,39 @@
         if (isset($_POST['Save'])) {
           $name = $_POST['name'];
           $address = $_POST['address'];
-          $number = $_POST['number'];
-          $photon=$_FILES['photo']['name'];
           $dob = $_POST['Membership_date'];
+          $number = $_POST['number'];
+            $file = $_FILES['photo'];
+            $filename=$_FILES['photo']['name'];
+            $fileloc = $_FILES['photo']['tmp_name'];
+            $filesize = $_FILES['photo']['size'];
+            $fileerror=$_FILES['photo']['error'];
+            $filetype=$_FILES['photo']['type'];
 
-          $qry = "INSERT INTO tb_members VALUES ('','$name','$address','$photon','$dob','$number')";
-          $con->query($qry);
-          header("locaion: addmembers.php");
+            $fileext=explode('.',$filename);
+            $filelowext=strtolower(end($fileext));
+            $allowed=array('jpg', 'jpeg', 'png', 'jfif');
+            if(in_array($filelowext,$allowed)){
+              if($fileerror === 0){
+                if($filesize>8000){
+                  $filenewname = uniqid('').".".$filelowext;
+                  $filedest = "../Images/Members/" . $filenewname;
+                  move_uploaded_file($fileloc,$filedest);
+                  $query = "INSERT INTO tb_sliders VALUES ('','$filenewname')";
+                  $qry = "INSERT INTO tb_members VALUES ('','$name','$address','$filenewname','$dob','$number')";
+                  $con->query($qry);
+                  header("locaion: addmembers.php?upl=1");
+                  echo "<div class='popup-true'>Image Uploaded</div>";
+                }else{
+                  echo "<div class='popup-false'>Image size too big</div>";
+                }
+              }else{
+                echo "<div class='popup-false'>error in uploading</div>";
+              }
+            }else{
+              echo "<div class='popup-false'>Wrong image format</div>";
+            }
+
         }
         ?>
       </div>
